@@ -1,7 +1,8 @@
 -- -----------------------------------------------------------------------
 -- Massbus Disk Emulator2 Top Level
 -- Bruce Sherry
--- Vulcan, Inc. Living Computer Museum
+-- Copyright 2013-2017 Vulcan Inc
+-- Developed by Living Computers: Museum+Labs, Seattle WA
 -- Created 11/6/2013 12:28:29 PM
 -- Version: 1.00
 -- Date: 11/6/2013 12:28:39 PM
