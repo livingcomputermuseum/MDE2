@@ -1,0 +1,48 @@
+pushd C:\Projects\MDE2\MDE-DR\
+
+copy "S:\Projects\MassBusDR\MDE-DR-4.sch" .
+copy "S:\Projects\MassBusDR\MDE-DR-4.brd" .
+copy "S:\Projects\MassBusDR\MDE-DR-4.brd.pdf" .
+copy "S:\Projects\MassBusDR\MDE-DR-4.sch.pdf" .
+copy "S:\Projects\MassBusDR\MDE-DR-4.parts.txt" .
+
+copy "S:\Projects\MassBusDR\MDE-DR-4_FAB.gbr" Art1\
+copy "S:\Projects\MassBusDR\MDE-DR-4_FAB.gpi" Art1\
+copy "S:\Projects\MassBusDR\MDE-DR-4_TopSilk.gbr" Art1\  
+copy "S:\Projects\MassBusDR\MDE-DR-4_TopSilk.gpi" Art1\  
+copy "S:\Projects\MassBusDR\MDE-DR-4_top.gbr" Art1\   
+copy "S:\Projects\MassBusDR\MDE-DR-4_top.gpi" Art1\   
+copy "S:\Projects\MassBusDR\MDE-DR-4_GND.gbr" Art1\   
+copy "S:\Projects\MassBusDR\MDE-DR-4_GND.gpi" Art1\   
+copy "S:\Projects\MassBusDR\MDE-DR-4_PWR.gbr" Art1\   
+copy "S:\Projects\MassBusDR\MDE-DR-4_PWR.gpi" Art1\   
+copy "S:\Projects\MassBusDR\MDE-DR-4_topmask.gbr" Art1\
+copy "S:\Projects\MassBusDR\MDE-DR-4_topmask.gpi" Art1\
+copy "S:\Projects\MassBusDR\MDE-DR-4_bottom.gbr" Art1\
+copy "S:\Projects\MassBusDR\MDE-DR-4_bottom.gpi" Art1\
+copy "S:\Projects\MassBusDR\MDE-DR-4_BotSilk.gbr" Art1\  
+copy "S:\Projects\MassBusDR\MDE-DR-4_BotSilk.gpi" Art1\  
+copy "S:\Projects\MassBusDR\MDE-DR-4_OTL.gbr" Art1\
+copy "S:\Projects\MassBusDR\MDE-DR-4_OTL.gpi" Art1\
+copy "S:\Projects\MassBusDR\MDE-DR-4_GND.gbr" Art1\
+copy "S:\Projects\MassBusDR\MDE-DR-4_GND.gpi" Art1\
+copy "S:\Projects\MassBusDR\MDE-DR-4_PWR.gbr" Art1\
+copy "S:\Projects\MassBusDR\MDE-DR-4_PWR.gpi" Art1\
+copy "S:\Projects\MassBusDR\MDE-DR-4_bottommask.gbr" Art1\
+copy "S:\Projects\MassBusDR\MDE-DR-4_bottommask.gpi" Art1\
+copy "S:\Projects\MassBusDR\MDE-DR-4_TopPaste.gbr" Art1\
+copy "S:\Projects\MassBusDR\MDE-DR-4_TopPaste.gpi" Art1\
+copy "S:\Projects\MassBusDR\MDE-DR-4_BotPaste.gbr" Art1\
+copy "S:\Projects\MassBusDR\MDE-DR-4_BotPaste.gpi" Art1\
+copy "S:\Projects\MassBusDR\MDE-DR-4_drill.exl" Art1\
+copy "S:\Projects\MassBusDR\MDE-DR-4_drill.dri" Art1\
+
+copy MDE-DR-4.* \\st_helens\VintageComputing\ECAD\MDE-DR\
+copy Art1 \\st_helens\VintageComputing\ECAD\MDE-DR\Art1
+
+cd Art1        
+del readme.txt.bak
+"C:\Program Files (x86)\7-Zip\7zg.exe" u MDE-DR-4.zip *fab.* *silk.* *top*.* *bot*.* *.exl *.dri *OTL*.* *GND*.* *PWR*.* readme.txt
+copy MDE-DR-4.zip \\st_helens\VintageComputing\ECAD\MDE-DR\Art1
+
+popd
