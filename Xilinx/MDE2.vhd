@@ -1,7 +1,8 @@
 -- -----------------------------------------------------------------------
 -- Massbus Disk Emulator
 -- Bruce Sherry
--- C. Vulcan, Inc. Living Computer Museum
+-- Copyright 2013-2017 Vulcan Inc
+-- Developed by Living Computers: Museum+Labs, Seattle WA
 -- Created from MDE_test.vhd 11/6/2013 6:43:51 AM
 -- Version: 2.29
 -- Date: 2/22/2016 2:51:07 PM
